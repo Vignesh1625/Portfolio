@@ -1,6 +1,17 @@
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(./backgroundBoxes..webp);
+    backdrop-filter: blur(5px);
+}
+#Home{
+    background-image: url(./KeyboardAndMmouse.jpg);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
 #Home img{
     border-radius: 10%;
+}
+#Projects .card{
+    background-image: url(./backgroundBoxes..webp);
+    background-color: #F1EFEF;
 }

@@ -3,12 +3,13 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
+    "compat-api/css": [
       "default",
       {
-        "document-title": "off"
+        "ignore": [
+          "backdrop-filter"
+        ]
       }
-    ],
-    "axe/name-role-value": "off"
+    ]
   }
 }
