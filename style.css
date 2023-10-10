@@ -1,11 +1,5 @@
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-@media (max-width: 768px) {
-    /* Your mobile-specific styles here */
-    #id{
-        display: grid;
-    }
-    #id.
-  }
+
   
