@@ -1,6 +1,6 @@
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(./backgroundBoxes..webp);
+    /*background-image: url(./backgroundBoxes..webp);*/
     backdrop-filter: blur(5px);
 }
 #Home{
