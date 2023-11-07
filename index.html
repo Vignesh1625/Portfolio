@@ -22,8 +22,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!--Header-->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fuild" >
+            <nav class="navbar navbar-expand-lg navbar mx-5">
               <a href="/" class="navbar-brand">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
                   <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
@@ -49,29 +49,29 @@
               </div>
             </nav>
         </div>
-
-          
         <!--Introduction-->
-        <div id="Home" class="container px-4 py-5 ">
-            <div class="row py-5">
-                <div class="col-12 col-md-6">
-                    <img src="https://th.bing.com/th/id/OIP.p3KbIWXio_vIB09Tzt--lQHaIB?pid=ImgDet&rs=1" class="d-block mx-auto img-fluid" alt="Profile Photo" width="300" height="200" loading="lazy">
-                </div>
-                <div class="col-12 col-md-6 text-center">
-                    <h1 class="display-2 fw-bolder lh-1 mt-4">Eligeti Vignesh</h1>
-                    <p class="lead display-6">Student at CMRCET</p>
+        <div id="Home" class="container-fuild">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col text-center mt-5">
+                    <h1 class="display-2 fw-bolder lh-1">Eligeti Vignesh</h1>
+                    <p class="lead display-6">I'm a <span id="textAnimation"></span> </p>
                     <!-- Resume -->
                     <a href="https://drive.google.com/file/d/1tp1XZgaJkuzPYTJUU935yqr_N8cW-R2p/view?usp=sharing">
                         <button type="button" class="btn btn-light">Download Resume</button>
                     </a>
                 </div>
+                <div class="profile col text-center">
+                    <img src="./Profile Photo.jpg" alt="Profile" height="100%" width="300px">
+                </div>
             </div>
         </div>
         
+        
+        
 
         <!--About-->
-        <div id="About" class="container py-5 my-5 ">
-            <div class="text-md-start mx-xl-5">
+        <div id="About" class="container-fuild py-5 ">
+            <div class="text-md-start m-5">
                 <h3 class="">About:</h3><hr>
                 <p class="lead text-xl-start mb-5">
                     As a college student pursuing a degree in computer science, I am eager to explore challenging opportunities in the technology sector within a reputable organization.
@@ -82,10 +82,10 @@
         </div>
         
         <!--Education-->
-        <div id="Education" class="container py-5 my-5 ">
-            <h3 class="">Education:</h3>
-            <hr class="">
-            <div class="row">
+        <div id="Education" class="container-fuild py-5   ">
+            <h3 class="mx-5">Education:</h3>
+            <hr class="mx-5">
+            <div class="row mx-5">
                 <div class="col-md-6">
                     <div class="text-md-start">
                         <ul class="text-lg">
@@ -117,18 +117,97 @@
         </div>
 
         <!--Projects-->
-        
-        
-        
+        <div class="container-fuild">
+            <br><h3 class="mx-5">Projects:</h3><hr class="mx-5"><br>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+                <div class="col">
+                  <div class="card">
+                    <img src="./backgroundBoxes..webp" class="card-img-top" alt="./backgroundBoxes..webp">
+                    <div class="card-body">
+                      <h5 class="card-title">Robotic Hand:</h5>
+                      <p class="card-text">Developed an artificial bionic arm for people with disabilities,
+                        Utilized Arduino, Python, and 3D printing technologies to create the device,
+                        Conducted user testing and received positive feedback on the functionality and usability of the device.</p>
+                        <a href="https://github.com/Vignesh1625/Bionic_Arm" alt="github link"><button type="button" class="btn btn-sm btn-outline-dark">Scorce Code</button></a>
 
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./backgroundBoxes..webp" class="card-img-top" alt="./backgroundBoxes..webp">
+                    <div class="card-body">
+                      <h5 class="card-title">Notes Taking App:</h5>
+                      <p class="card-text">Developed an online web application for notes and to-do lists,
+                        Built the front-end and back-end of the app using HTML, CSS, JavaScript, and SQL.
+                        Implemented a user-friendly interface for easy handling of all requirements.</p>
+                        <a href="https://vignesh1625.github.io/NoteTakingWeb/"><button type="button" class="btn btn-sm btn-outline-dark">View</button></a>
+                        <a href="https://github.com/Vignesh1625/NoteTakingWeb"><button type="button" class="btn btn-sm btn-outline-dark">Scorce Code</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./backgroundBoxes..webp" class="card-img-top" alt="./backgroundBoxes..webp">
+                    <div class="card-body">
+                      <h5 class="card-title">AI Bot:</h5>
+                      <p class="card-text">Integrated a chatbot with Google and Bard services,
+                        Employed natural language processing and speech recognition techniques to enable voice control by the user,
+                        Performed some minor tasks on the user’s laptop, such as playing music app of all requirements.</p>
+                        <button type="button" class="btn btn-sm btn-outline-dark">Scorce Code</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./backgroundBoxes..webp" class="card-img-top" alt="./backgroundBoxes..webp">
+                    <div class="card-body">
+                      <h5 class="card-title">Wine Quality Prediction:</h5>
+                      <p class="card-text">Applied machine learning algorithms to predict wine quality based on various chemical and physical properties,
+                        Used Python, scikit-learn, pandas, and XGBoost libraries,
+                        Trained a classification model using XGBoost algorithm,
+                        Achieved an accuracy of 95% on the test set.</p>
+                        <button type="button" class="btn btn-sm btn-outline-dark">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-dark">Scorce Code</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="./backgroundBoxes..webp" class="card-img-top" alt="./backgroundBoxes..webp">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Built a machine learning model to predict smoker and drinker status based on demographic and health information,
+                            Used R, caret, ggplot2, and RandomForest packages,
+                            Trained a classification model using RandomForest algorithm,
+                            Achieved an accuracy of 98% on the test set.</p>
+                            <button type="button" class="btn btn-sm btn-outline-dark">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-dark">Scorce Code</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="./backgroundBoxes..webp" class="card-img-top" alt="./backgroundBoxes..webp">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button type="button" class="btn btn-sm btn-outline-dark">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-dark">Scorce Code</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <br>
+        </div>
 
         <!--Experience & Skills-->
-        <div id="Skills" class="container py-5 my-5 ">
-            <h3 class=" mx-5">Skills:</h3>
+        <div id="Skills" class="container-fuild py-5 ">
+            <h3 class="mx-5">Skills:</h3>
             <hr class="mx-5">
-            <div class="row">
+            <div class="row mx-5">
                 <div class="col-md-6">
-                    <div class="text-md-start mx-xl-5">
+                    <div class="text-md-start">
                         <ul class="">
                             <li>
                                 <p><strong>Back-End Development: </strong></p>
@@ -162,9 +241,9 @@
         
         
 
-        <div id="Contact" class="container py-5 my-5 text-center ">
+        <div id="Contact" class="container-fuild py-5  text-center ">
             <h1 class="display-5 fw-bold text-body-emphasis">Eligeti Vignesh</h1>
-            <div class="col-lg-6 mx-auto">
+            <div class="col-lg-6 mx-auto mx-5">
               <p class="lead mb-4">Let's get in touch</p>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <!--Linkden-->
@@ -191,8 +270,8 @@
             </div>
           </div>
         <!--Fotter-->
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="container-fuild">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-0 mx-5">
               <div class="col-md-4 d-flex align-items-center">
                 <span class="mb-3 mb-md-0 text-body-light">© Copyright, Vignesh</span>
               </div>
