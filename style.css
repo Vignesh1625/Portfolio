@@ -2,17 +2,8 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url(./mg1.jpg);
     backdrop-filter: blur(5px);
-    background-color: 000000;
-    color: whte;
-}
-#Home{
-    /*background-image: url(./KeyboardAndMmouse.jpg);*/
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-}
-#Home{
-    background-image: url(https://mrketingaccesspass.com/wp-content/uploads/2015/10/Podcast-Website-Design-Background-Image.jpg);
-    border-radius: 0;
+    background-color: #E3CCAE; 
+    color: #333333;
 }
 #textAnimation {
     font-size: 36px;
@@ -21,16 +12,43 @@ body{
     overflow: hidden;
 }
 
-.container-fuild{
-    background-color: #E3CCAE;
-}
 .container-fuild .profile img{
     border-radius: 5%;
 }
 
-.card-body{
+/* Background Color */
+body {
     background-color: #E3CCAE;
-}
-body button{
-    background-color: #B8621B;
-}
+  }
+  
+
+  p, .lead, .card-text {
+    color: #333333; /* Body Text Color */
+  }
+  
+  /* Subheading Text Color */
+  h3 {
+    color: #4C4C4C;
+  }
+  
+  /* Button Styles */
+  .btn {
+    color: #FFFFFF; /* Button Text Color */
+    background-color: #004466; /* Button Background Color */
+  }
+  
+  /* Link Styles */
+  a {
+    color: #0066CC; /* Link Text Color (Unvisited) */
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #800080; /* Link Text Color (Visited) */
+  }
+  
+  a:hover {
+    color: #FF6600; /* Link Hover Color */
+  }
+  
+  
