@@ -1,10 +1,32 @@
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(./mg1.jpg);
-    backdrop-filter: blur(5px);
-    background-color: #E3CCAE; 
-    color: #333333;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+
+.background-image {
+    background-image: url('./pp.png'); /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Ensure the background is behind other content */
+}
+
+.container-fluid {
+    padding: 20px;
+}
+.container-fluid h3{
+    color: #EEEEEE;
+}
+
 #textAnimation {
     font-size: 36px;
     color: blue;
@@ -12,43 +34,86 @@ body{
     overflow: hidden;
 }
 
-.container-fuild .profile img{
+.container-fluid .profile img {
     border-radius: 5%;
 }
 
-/* Background Color */
-body {
-    background-color: #E3CCAE;
-  }
-  
+/* Color Palette */
+/* #ED7D31: Myname, #6C5F5B: subheading, #4F4A45: heading, #F6F1EE: background */
 
-  p, .lead, .card-text {
-    color: #333333; /* Body Text Color */
-  }
-  
-  /* Subheading Text Color */
-  h3 {
-    color: #4C4C4C;
-  }
-  
-  /* Button Styles */
-  .btn {
-    color: #FFFFFF; /* Button Text Color */
-    background-color: #004466; /* Button Background Color */
-  }
-  
-  /* Link Styles */
-  a {
-    color: #0066CC; /* Link Text Color (Unvisited) */
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: #800080; /* Link Text Color (Visited) */
-  }
-  
-  a:hover {
-    color: #FF6600; /* Link Hover Color */
-  }
-  
-  
+#Home h1 {
+    color: #ED7D31;
+}
+
+
+#AboutMe {
+    background-color: black;
+}
+
+#Projects {
+    background-color: black;
+}
+
+#Contact {
+    background-color: black;
+    color: white;
+}
+
+#Fotter {
+    background-color: black;
+    margin-top: 0px;
+}
+
+#AboutMe .heading {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 25px;
+}
+
+#AboutMe img {
+    margin-top: 30px;
+    width: 300px;
+    height: 350px;
+    border-radius: 2%;
+}
+
+#AboutMe .aboutlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutlinks div {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.aboutlinks div.active {
+    border-bottom: 2px solid #ea0101;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+.grid-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grid-item li {
+    margin-bottom: 5px;
+}
+
+#Projects .card{
+    background-color: black;
+    color: white;
+}
