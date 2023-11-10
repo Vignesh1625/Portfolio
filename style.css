@@ -6,9 +6,8 @@ body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-
 .background-image {
-    background-image: url('./pp.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('./pp.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,13 +16,14 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1; /* Ensure the background is behind other content */
+    z-index: -1;
 }
 
 .container-fluid {
     padding: 20px;
 }
-.container-fluid h3{
+
+.container-fluid h3 {
     color: #EEEEEE;
 }
 
@@ -38,30 +38,19 @@ body {
     border-radius: 5%;
 }
 
-/* Color Palette */
-/* #ED7D31: Myname, #6C5F5B: subheading, #4F4A45: heading, #F6F1EE: background */
-
 #Home h1 {
     color: #ED7D31;
 }
-
 
 #AboutMe {
     background-color: black;
 }
 
-#Projects {
-    background-color: black;
-}
-
-#Contact {
-    background-color: black;
-    color: white;
-}
-
+#Projects,
+#Contact,
 #Fotter {
     background-color: black;
-    margin-top: 0px;
+    color: white;
 }
 
 #AboutMe .heading {
@@ -86,9 +75,11 @@ body {
 
 .aboutlinks div {
     cursor: pointer;
-    padding: 5px;
+    display: block;
+    padding: 5px 10px 5px 10px; /* Top, Right, Bottom, Left */
     border-radius: 5px;
 }
+
 
 .aboutlinks div.active {
     border-bottom: 2px solid #ea0101;
@@ -113,7 +104,46 @@ body {
     margin-bottom: 5px;
 }
 
-#Projects .card{
+#Projects .card {
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .background-image {
+        background-color: black;
+        background-image: none;
+    }
+
+    #AboutMe .heading {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #AboutMe img {
+        width: 100%;
+        height: auto;
+    }
+
+    #AboutMe .aboutlinks {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .matter {
+        width: 100%;
+    }
+  
+    .aboutPhoto {
+        order: -1; /* Move aboutPhoto to the top */
+        margin-bottom: 20px; /* Add some space between the photo and the text */
+    }
+  
+    .aboutText {
+         margin-bottom: 20px; /* Add some space between the text and the links */
+    }
+}
+
+  

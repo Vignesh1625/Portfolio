@@ -19,7 +19,7 @@ function typeAndDelete() {
     if (index >= 0) {
       textElement.textContent = text.substring(0, index);
       index--;
-      setTimeout(typeAndDelete, 50); // Delete one character at a time
+      setTimeout(typeAndDelete, 100); // Delete one character at a time
     } else {
       isTyping = true;
       textIndex = (textIndex + 1) % texts.length;
@@ -86,7 +86,16 @@ function showContent(event) {
             <p></p>
         </div>
     </div>`,
-    experience: 'Your experience content goes here.'
+    experience: `
+    <div id="Experience">
+        <div class="experience-item">
+            <p><strong>AICTE RPA Devleoper</strong>  Virtual Intenship (September2023 -November 2023) <a href="./AICTE RPA.pdf" alt="">Certificate</a></p>
+        </div>
+
+        <div class="experience-item">
+            <p><strong>CodSoft </strong> Virtual Internship (October 2023)<a href="https://drive.google.com/file/d/1i_t-dCEnk1GeJSkiWpggbXDe43C1edPA/view" alt="">Certificate</a></p>
+        </div>
+    </div>`
   };
 
   // Check if the target is defined in the content object
@@ -95,7 +104,7 @@ function showContent(event) {
     document.getElementById('contentContainer').innerHTML = content[target];
   } else {
     // Handle undefined case (optional)
-    document.getElementById('contentContainer').innerHTML = 'Content not available.';
+    document.getElementById('contentContainer').innerHTML = '.';
   }
 
   // Remove the "active" class from all tabs
