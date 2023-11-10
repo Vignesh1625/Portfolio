@@ -83,27 +83,43 @@ body {
 
 .aboutlinks div.active {
     border-bottom: 2px solid #ea0101;
+    color: grey;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+#Skills {
+    display: inline;
 }
 
-.grid-item {
-    padding: 10px;
+#Skills .skills-item  {
+    font-size: 1rem;
+    margin: 0px 10px 0px 10px;
+}
+#Skills .skills-item strong{
+    font-size: 1rem;
+    color: #CE5A67;
 }
 
-.grid-item ul {
-    list-style-type: none;
-    padding: 0;
+#Education{
+    display: inline;
+}
+.education-item{
+    margin: 0px 10px 0px 10px;
+    font-size: 15px;
+}
+.education-item strong{
+    color: #CE5A67;
 }
 
-.grid-item li {
-    margin-bottom: 5px;
+.Experience{
+    display: inline;
 }
-
+.experience-item{
+    margin: 0px 10px 0px 10px;
+    font-size: 15px;
+}
+.experience-item strong{
+    color: #CE5A67;
+}
 #Projects .card {
     background-color: black;
     color: white;
@@ -146,4 +162,4 @@ body {
     }
 }
 
-  
+

@@ -38,36 +38,21 @@ function showContent(event) {
   // Define the content for each target
   const content = {
     skills: `
-      <div class="grid-container">
-        <div class="grid-item"><strong>Back-End Development:</strong>
-          <ul>
-            <li>Data Structures & Alogrithms</li>
-            <li>Java,OOPS</li>
-            <li>MySQL</li>
-          </ul>
+      <div id="Skills">
+        <div class="skills-item">
+            <p><strong>Back-End Development:</strong>   Data Structures & Alogrithms,Java,OOPS,Java,OOPS</p>
+\        </div>
+
+        <div class="skills-item">
+          <p><strong>Front-End Development:</strong>HTML,CSS,JavaScript</p>
         </div>
 
-        <div class="grid-item"><strong>Front-End Development:</strong>
-          <ul>
-            <li>HTML,CSS</li>
-            <li>JavaScript</li>
-          </ul>
+        <div class="skills-item">
+          <p><strong>Data Science/Analysis:</strong>Scikit-learn,NumPy,Pandas,Seaborn</p>
         </div>
 
-        <div class="grid-item"><strong>Data Science/Analysis:</strong>
-          <ul>
-            <li>Scikit-learn</li>
-            <li>NumPy,Pandas</li>
-            <li>Seaborn</li>
-          </ul>
-        </div>
-
-        <div class="grid-item"><strong>DevOps:</strong>
-          <ul>
-            <li>Docker</li>
-            <li>Git and GitHub</li>
-            <li>Azure & Heroku</li>
-          </ul>
+        <div class="skills-item">
+            <p><strong>DevOps:</strong>Docker,Git and GitHub,Azure & Heroku</p>
         </div>
       </div>
     `,
@@ -93,7 +78,7 @@ function showContent(event) {
         </div>
 
         <div class="experience-item">
-            <p><strong>CodSoft </strong> Virtual Internship (October 2023)<a href="https://drive.google.com/file/d/1i_t-dCEnk1GeJSkiWpggbXDe43C1edPA/view" alt="">Certificate</a></p>
+            <p><strong>CodSoft </strong> Virtual Internship on <strong>Machine Learning </strong>(October 2023)<a href="https://drive.google.com/file/d/1i_t-dCEnk1GeJSkiWpggbXDe43C1edPA/view" alt="">Certificate</a></p>
         </div>
     </div>`
   };
@@ -104,7 +89,7 @@ function showContent(event) {
     document.getElementById('contentContainer').innerHTML = content[target];
   } else {
     // Handle undefined case (optional)
-    document.getElementById('contentContainer').innerHTML = '.';
+    document.getElementById('contentContainer').innerHTML = '';
   }
 
   // Remove the "active" class from all tabs
