@@ -1,0 +1,126 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem 8rem 1rem 8rem;
+}
+.container{
+    margin-bottom: 4rem;
+}
+header{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    background-color: white;
+}
+header ul{
+    display: inline-flex;
+    justify-content: center ;
+    list-style: none;
+
+}
+.name{
+    font-size: 2rem;
+    font-weight:bolder;
+    color: black;
+}
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    color: gray;
+}
+
+button:active {
+    color: grey;
+}
+
+#About{
+    background-color: white;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+}
+.container .image{
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.container .image img{
+    height: 25rem;
+    margin: 0rem 4rem 0rem 4rem;
+    border-radius: 5%;
+}
+.container .content{
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.container .content .nameId{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.container .content .text-muted{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+}
+.container .content .textIam {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+}
+.container .links{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.container .educ{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container .educ .item{
+    background-color: white;
+    border-radius: 5%;
+    padding: 5px;
+    justify-content: center;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.proItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: .5rem;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Adjust this value to limit the number of lines shown */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .skContain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-left: 4rem;
+}
